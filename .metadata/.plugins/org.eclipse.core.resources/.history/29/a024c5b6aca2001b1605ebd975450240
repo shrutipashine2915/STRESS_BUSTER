@@ -1,0 +1,39 @@
+from tkinter import *
+import tkinter as tk
+from tkinter import PhotoImage
+from REMEDIESPANEL import *
+from Window import Window
+
+class Acute_Stress :
+    win=Window()
+    win1=win.root
+    root1 = win1
+    root=Frame(root1,width=2000,height=1000)
+    root.place(x=0,y=0)
+    root.configure(bg="lightblue")
+    
+
+    def start(self):
+        #print(os.listdir())
+        bg = PhotoImage( file = "D:/Project/Stress_Buster/src/Images/bg.png")
+        label1 = Label(self.root, image = bg)
+        label1.place(x = 480,y = 150)
+        self.b = Button(self.root, text="Remedies" ,command=Acute_Stress.cRemides,font=("Comic Sans MS", 8, "bold"), width= 25 , height = 2)
+        self.c = Button(self.root, text="Product",font=("Comic Sans MS", 8, "bold"), width= 25, height=2)
+        self.b.place(x = 700, y = 500, anchor=CENTER)
+        self.c.place(x = 870, y = 500,anchor=CENTER)
+        self.root.mainloop()
+        self.root.configure(bg="lightblue")
+        
+    def cRemides():
+        Acute_Stress.root.destroy()
+        a=REMEDIES()
+        a.form()
+        return
+Acute_Stress.start(Acute_Stress)
+
+
+
+
+
+

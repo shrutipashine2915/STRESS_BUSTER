@@ -1,0 +1,176 @@
+from tkinter import *
+from tkinter import Tk
+from _overlapped import NULL
+from _functools import partial
+from gettext import find
+from tkcalendar import Calendar
+
+from dataManagement import DataManagement
+from calendar import month
+from Window import Window
+from Symptomlist import Symptoms
+
+
+class Registration:
+    "This is Registration Class"
+    #All Variables:-
+   
+    win=Window()
+    root1 = win.root
+    root =Frame(root1,width=1000,height=1000)
+    root.place(x=600,y=250)
+    #root.configure(width=1000,height=1000)
+    
+    i=0
+    b1=Button()
+    label1 = Label(root, text="Registration form",width=20,font=("bold", 30))
+    Name= Label(root, text="Full Name:",width=20,font=("bold", 15))
+    tName = Entry(root,width=50)
+    
+    Email= Label(root, text="Email:",width=20,font=("bold", 15))
+    tEmail = Entry(root,width=50)
+    Gender = Label(root, text="Gender:",width=20,font=("bold", 15))
+    var = IntVar()
+    DOB= Label(root, text="DOB",width=20,font=("bold", 15))
+    
+    
+    Contact= Label(root, text="Contact",width=20,font=("bold", 15))
+    tContact= Entry(root,width=50)
+   
+    c=StringVar()
+
+    Address= Label(root, text="Address",width=20,font=("bold", 15))
+    tAddress= Entry(root,width=50)
+    State= Label(root, text="State",width=20,font=("bold", 15))
+    tState= Entry(root,width=50)
+    District= Label(root, text="District",width=20,font=("bold", 15))
+    tDistrict= Entry(root,width=50)
+    Taluka= Label(root, text="Taluka",width=20,font=("bold", 15))
+    tTaluka= Entry(root,width=50)
+    r1=Radiobutton(root, text="Male",padx = 5, variable=var, value=1,font=("bold", 15))
+    r2=Radiobutton(root, text="Female",padx = 20, variable=var, value=2,font=("bold", 15))
+    r3=Radiobutton(root, text="Other",padx = 45, variable=var, value=3,font=("bold", 15))
+    cal =Calendar(root,year=2021,month=1,date=1)
+    
+ 
+    def __init__(self):
+        self.b1=Button(self.root, text='Submit',command=self.validation,width=30,bg='brown',fg='black')
+    
+    def validation(self):
+        """
+        data=DataManagement()
+        if len(Registration.tName.get())<=3 :
+            print("Please Enter Correct Name")
+            return
+        else :
+            data.set_name__(Registration.tName.get())
+        
+        if Registration.tEmail.get().find("@") != -1 :
+            value=Registration.tEmail.get()
+            data.set_email__(value)
+        else:
+            print("Please Enter Correct Email Address")
+            return
+        
+        if Registration.var.get() == 1:
+            data.set_gender__("Male")
+        elif Registration.var.get() == 2:
+            data.set_gender__("Female")
+        elif Registration.var.get() == 3:
+            data.set_gender__("Other")
+        else:
+            print("Please Select Gender")
+            return
+        
+        data.set_dob__(Registration.cal.get_date())
+        if Registration.tContact.get().isdigit():
+            data.set_contact__(Registration.tContact.get())
+        else :
+            print("Wrong Number")
+            return
+            
+        data.set_address__(Registration.tAddress.get())
+        data.storeNew()
+        
+        
+       """
+        Registration.root.destroy()
+        
+        symp=Symptoms()
+        symp.draw()
+        
+        
+       
+        
+        
+        
+
+    
+    def window(self):
+        self.root.geometry('1000x1000')
+        self.root.title("Registration Form")
+        self.root.configure(bg="light blue")
+
+
+
+
+    def placing(self):
+        X=0
+        Y=0
+        XD=170
+        YD=50
+
+        #Registration.label1.place(x=90,y=53)
+        self.Name.place(x=X,y=Y)
+        self.tName.place(x=X+XD,y=Y)
+        Y+=YD
+        Registration.Email.place(x=X,y=Y)
+        Registration.tEmail.place(x=X+XD,y=Y)
+        Y+=YD
+        Registration.Gender.place(x=X,y=Y)
+        
+        self.r1.place(x=X+XD,y=Y)
+        self.r2.place(x=X+XD+80,y=Y)
+        self.r3.place(x=X+XD+70+XD,y=Y)
+        Y+=YD
+        Registration.DOB.place(x=X,y=Y)
+        Registration.cal.place(x=X+XD,y=Y)
+        Y=Y+(YD*4)
+        
+        Registration.Contact.place(x=X,y=Y)
+        Registration.tContact.place(x=X+XD,y=Y)
+        Y=Y+YD
+        """
+        Registration.State.place(x=X,y=Y)
+        Registration.tState.place(x=X+XD,y=Y)
+        Y=Y+YD
+
+        Registration.District.place(x=X,y=Y)
+        Registration.tDistrict.place(x=X+XD,y=Y)
+        Y=Y+YD
+
+        Registration.Taluka.place(x=X,y=Y)
+        Registration.tTaluka.place(x=X+XD,y=Y)
+        Y=Y+YD
+
+        """
+        Registration.Address.place(x=X,y=Y)
+        Registration.tAddress.place(x=X+XD,y=Y)
+        Y=Y+YD
+        print(Y)
+        Registration.c.set('Select your City')
+        
+        
+        self.b1.place(x=X+XD,y=Y)
+        
+        
+       
+        self.root.mainloop()
+       
+        
+    
+       
+        
+
+        
+    

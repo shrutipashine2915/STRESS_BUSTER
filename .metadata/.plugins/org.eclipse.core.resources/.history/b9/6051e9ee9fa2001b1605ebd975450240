@@ -1,0 +1,9 @@
+from tkinter import Tk
+class Window:
+    root = Tk()
+    
+    def __init__(self):
+        
+        self.root.attributes('-fullscreen',True)
+        self.root.title("Registration Form")
+        

@@ -1,0 +1,15 @@
+"""
+from PySide2 import *
+from PySide2.QtWidgets import QApplication, QWidget, QPushButton
+import sys
+from main import MainWindow
+class Login:
+    app=QApplication(sys.argv)
+    MainWindow=QWidget()
+    MainWindow.resize(1000,1000)
+    MainWindow.setWindowTitle("Login")
+    MainWindow.show()
+    button =QPushButton("Hey Clicked ME")
+    layout=Q
+    app.exec_()
+"""

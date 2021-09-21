@@ -1,0 +1,30 @@
+from tkinter import *
+import tkinter as tk
+from tkinter import PhotoImage
+from REMEDIESPANEL import *
+from Window import Window
+
+class Chronic_Stress :
+    win=Window.root
+    root1 = win
+    root=Frame(root1,width=1000,height=1000)
+    root.grid(row=0,column=0)
+    
+        
+    def start(self):
+        bg = PhotoImage( file = "D:/Project/Stress_Buster/src/Images/bg2.png")
+        label1 = Label(self.root, image = bg)
+        label1.place(x = 0,y = 0 ,relwidth=1, relheight=1)
+        b = Button(self.root, text="Remedies" ,command=Chronic_Stress.cRemides, width= 25 , height = 2)
+        c = Button(self.root, text="Product", width= 25, height=2)
+        b.place(x = 300, y = 500)
+        c.place(x = 600, y = 500)
+        self.root.mainloop()
+        
+    def cRemides():
+        
+        Chronic_Stress.root.destroy()
+        a=REMEDIES()
+        a.form()
+        
+

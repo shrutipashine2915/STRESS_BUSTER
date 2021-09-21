@@ -1,0 +1,41 @@
+from tkinter import *
+from Window import Window
+from music import MusicPlayer
+from Remedies import Remedies
+from modbuttons import ModButton
+class REMEDIES:
+    win=Window.root
+    root1 = win
+    root=Frame(root1,width=1000,height=1000)
+    root.grid(row=0,column=1)
+    
+    def form(self):
+        
+        label1 = Label(self.root, text="REMEDIES.....",width=20,font=("bold", 20))
+        label1.place(x=30,y=50)
+
+
+
+        Button(self.root, text='HOME REMEDIES',command=REMEDIES.ghome,width=30,fg='black').place(x=90,y=150)
+
+        Button(self.root, text='WORKOUT',command=REMEDIES.gworkout,width=30,fg='black').place(x=90,y=200)
+
+        Button(self.root, text='MUSIC',command=REMEDIES.gmusic,width=30,fg='black').place(x=90,y=250)
+
+
+
+
+        self.root.mainloop()
+    def gmusic():
+        mp=MusicPlayer(REMEDIES.root)
+    
+    def gworkout():
+        REMEDIES.root.destroy()
+        mb=ModButton()
+        mb.place()
+        
+        return
+    def ghome():
+        a=Remedies()
+        a.place()
+        

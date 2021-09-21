@@ -1,0 +1,126 @@
+from tkinter import *
+from distutils import command
+from _overlapped import NULL
+import tkinter
+from dataManagement import DataManagement
+from Window import Window
+from _ast import If
+from REMEDIESMODULE1 import Acute_Stress
+from REMEDIESMODULE2 import Episodic_Stress
+from REMEDIESMODULE3 import Chronic_Stress
+class Symptoms:
+    wind=Window()
+    win1= wind.root
+    
+    w, h = win1.winfo_screenwidth(),win1.winfo_screenheight()
+    win=Frame(win1,width=1000,height=1000)
+    win.place(x=0,y=0)
+    win.configure(bg="lightblue")
+    
+    acute_stress= ["ANXIETY","LOW MOOD","IRRITATION","POOR SLEEP","WANTING TO BE ALONE","HEADACHE","CHEST PAIN"]
+    episodic_stress=["TENSION","CHEST PAIN","RAPID HEART BEAT","ELEVATED BLOOD PRESSURE","MIGRANES"]
+    chronic_stress=["FATIGUE","HEADACHE","FEELING HELPLESS","LOSS OF SEXUAL DESIRE","LOW OF SELF ESTEEM","DIFFULTY SLEEPING"]
+    symptom_list = ["HEADACHE","FEVER","LOW ENERGY","LOW MOOD","ACHES","CHEST PAIN","RAPID HEARTBEAT","IRRITATION","POOR SLEEP","WANTING TO BE ALONE","INFECTIONS","LOSS OF SEXUAL DESIRE","NERVOUSNESS AND SHAKING","DIFFICULTY IN SLEEPING","COLD","SWEATY ","DRY MOUTH","MIGRANINES","ELEVATED BLOOD PRESSURE","TENSION","FRUSTRATION","FEAR","SADNESS","ANGER","GUILT","SHAME","JEALOUSY","WORRY","ANXIETY","FATIGUE","VOMITTING","PANIC ATTACK","CHRONIC FATIGUE","DIFICULTY SLEEPING","GRINDING TEETH","SELF CRTICISM","DIGESTIVE PROBLEMS","CRYING","NO APPETITE","LOW SELF ESTEEM","INCREASES USE OF ALCHOL","WEIGHT LOSS OR GAIN","DISTRACTED","BACK PAIN","HAIR LOSS","IRREGULAR MENSTURATION CYCLE","SKIN PROBLEM","BREATHING PROBLEM","DEPRESSION","OVEREACTING"]
+    l1=Label(win,text="PLEASE SELECT THE SYMPTOMS",bg="lightblue")
+    checkbox = [0]*len(symptom_list)
+    #checkbox=Checkbutton()
+    
+    
+    #e1 = Entry(win,width=50)
+    var=[0]*len(symptom_list)
+    
+    def draw(self):
+     
+        symptom_list = self.symptom_list
+       
+        
+       
+        font_tup1 = ("Comic Sans MS", 30, "bold")
+        font_tup = ("Century", 10, "bold")
+
+        
+        self.l1.place(x=0,y=0)
+
+        
+        #self.OTHER.place(x=100,y=580)
+        
+        #self.e1.place(x=300,y=580)
+
+        
+        
+        for symptom in symptom_list:
+            
+            i = symptom_list.index(symptom)
+            Symptoms.var[i] = IntVar()
+            self.checkbox[i] = Checkbutton(self.win,text=symptom,font=font_tup,bg="lightblue",variable=Symptoms.var[i])
+            
+            if i <= int(len(symptom_list)/2):
+                #self.checkbox[i].grid(row = i, column = 1)
+                self.checkbox[i].place(x=90,y=(i+1)*20)
+            else:
+               # self.checkbox[i].grid(row = i % int(len(symptom_list)),column = 8)
+                self.checkbox[i].place(x = 600, y = (i%25)*20)
+                
+        Button(self.win,text="SUBMIT",command=Symptoms.validation).place(x=400,y=600)
+        self.win.mainloop()
+       
+    
+  
+    def validation():
+        ass = 0
+        cs = 0
+        es = 0
+        sym=Symptoms.symptom_list
+        asl=Symptoms.acute_stress
+        csl=Symptoms.chronic_stress
+        esl=Symptoms.episodic_stress
+        for ind in Symptoms.symptom_list:
+            i =Symptoms.symptom_list.index(ind)
+           
+            check=Symptoms.var[i].get()
+            if check==0 :
+               # print("ok")
+               continue
+            else :
+                s=sym[i]
+                for j in asl:
+                    
+                    if s==j:
+                        ass=ass+1
+                        print(ass)
+                for j in csl:
+                    
+                    if s==j:
+                        cs=cs+1
+                        print(cs)
+                for j in esl:
+                    
+                    if s==j:
+                        es=es+1
+                        print(es)
+                    
+        if ass>=4:
+            Symptoms.win.destroy()
+            asc=Acute_Stress()
+            asc.start()
+            return
+            
+        if cs>=4:
+            
+            csc=Chronic_Stress()
+            csc.start()
+        if es>=4:
+            Symptoms.win.destroy()
+            esc=Episodic_Stress()
+            esc.start()
+            
+        
+        #DataManagement.set_symptoms__(Symptoms,list1)
+        #DataManagement.storesymptom(DataManagement)
+        
+        #Symptoms.win.destroy()
+        
+Symptoms.draw(Symptoms)
+        
+
+

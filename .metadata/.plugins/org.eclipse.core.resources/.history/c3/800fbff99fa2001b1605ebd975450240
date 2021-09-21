@@ -1,0 +1,10 @@
+from tkinter import Tk
+class Window:
+    root = Tk()
+    
+    def __init__(self):
+        
+        w, h = root.winfo_screenwidth(),root.winfo_screenheight()
+        self.root.geometry("%dx%d+0+0" % (w,h))
+        self.root.title("Registration Form")
+        

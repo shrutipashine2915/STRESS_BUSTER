@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+    <summary errors="9" failures="0" finished="true" name="Test Run: 0" tests="0" total_time="Finished in: 0.00 secs."/>
+    <test location="D:/Project/Stress_Buster/src/main.py" status="error" test="main" time="0">
+        <stdout/>
+        <stderr>
+            <![CDATA[Traceback (most recent call last):
+  File "C:\Users\Dell\.p2\pool\plugins\org.python.pydev.core_7.7.0.202008021154\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "D:\Project\Stress_Buster\src\main.py", line 8, in <module>
+    from register import Registration
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\register.py", line 11, in <module>
+    from Symptomlist import Symptoms
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\Symptomlist.py", line 8, in <module>
+    from REMEDIESMODULE1 import Acute_Stress
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESMODULE1.py", line 4, in <module>
+    from REMEDIESPANEL import *
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESPANEL.py", line 5, in <module>
+    from modbuttons import ModButton
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 11, in <module>
+    class ModButton:
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 14, in ModButton
+    root=Frame(root1,width=1000,height=1000)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 3119, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 2567, in __init__
+    self.tk.call(
+_tkinter.TclError: can't invoke "frame" command: application has been destroyed
+ERROR: Module: main could not be imported (file: D:/Project/Stress_Buster/src/main.py).
+]]>
+        </stderr>
+    </test>
+    <test location="D:/Project/Stress_Buster/src/modbuttons.py" status="error" test="modbuttons" time="0">
+        <stdout/>
+        <stderr>
+            <![CDATA[Traceback (most recent call last):
+  File "C:\Users\Dell\.p2\pool\plugins\org.python.pydev.core_7.7.0.202008021154\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 11, in <module>
+    class ModButton:
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 14, in ModButton
+    root=Frame(root1,width=1000,height=1000)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 3119, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 2567, in __init__
+    self.tk.call(
+_tkinter.TclError: can't invoke "frame" command: application has been destroyed
+ERROR: Module: modbuttons could not be imported (file: D:/Project/Stress_Buster/src/modbuttons.py).
+]]>
+        </stderr>
+    </test>
+    <test location="D:/Project/Stress_Buster/src/product.py" status="error" test="product" time="0">
+        <stdout/>
+        <stderr>
+            <![CDATA[Traceback (most recent call last):
+  File "C:\Users\Dell\.p2\pool\plugins\org.python.pydev.core_7.7.0.202008021154\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\product.py", line 13, in <module>
+    photo = PhotoImage(file="D:\Project\Stress_Buster\src\main.jpeg")
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 4061, in __init__
+    Image.__init__(self, 'photo', name, cnf, master, **kw)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 4006, in __init__
+    self.tk.call(('image', 'create', imgtype, name,) + options)
+_tkinter.TclError: couldn't recognize data in image file "D:\Project\Stress_Buster\src\main.jpeg"
+ERROR: Module: product could not be imported (file: D:/Project/Stress_Buster/src/product.py).
+]]>
+        </stderr>
+    </test>
+    <test location="D:/Project/Stress_Buster/src/register.py" status="error" test="register" time="0">
+        <stdout/>
+        <stderr>
+            <![CDATA[Traceback (most recent call last):
+  File "C:\Users\Dell\.p2\pool\plugins\org.python.pydev.core_7.7.0.202008021154\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\register.py", line 11, in <module>
+    from Symptomlist import Symptoms
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\Symptomlist.py", line 8, in <module>
+    from REMEDIESMODULE1 import Acute_Stress
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESMODULE1.py", line 4, in <module>
+    from REMEDIESPANEL import *
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESPANEL.py", line 5, in <module>
+    from modbuttons import ModButton
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 11, in <module>
+    class ModButton:
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 14, in ModButton
+    root=Frame(root1,width=1000,height=1000)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 3119, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 2567, in __init__
+    self.tk.call(
+_tkinter.TclError: can't invoke "frame" command: application has been destroyed
+ERROR: Module: register could not be imported (file: D:/Project/Stress_Buster/src/register.py).
+]]>
+        </stderr>
+    </test>
+    <test location="D:/Project/Stress_Buster/src/REMEDIESMODULE1.py" status="error" test="REMEDIESMODULE1" time="0">
+        <stdout/>
+        <stderr>
+            <![CDATA[Traceback (most recent call last):
+  File "C:\Users\Dell\.p2\pool\plugins\org.python.pydev.core_7.7.0.202008021154\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESMODULE1.py", line 4, in <module>
+    from REMEDIESPANEL import *
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESPANEL.py", line 5, in <module>
+    from modbuttons import ModButton
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 11, in <module>
+    class ModButton:
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 14, in ModButton
+    root=Frame(root1,width=1000,height=1000)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 3119, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 2567, in __init__
+    self.tk.call(
+_tkinter.TclError: can't invoke "frame" command: application has been destroyed
+ERROR: Module: REMEDIESMODULE1 could not be imported (file: D:/Project/Stress_Buster/src/REMEDIESMODULE1.py).
+]]>
+        </stderr>
+    </test>
+    <test location="D:/Project/Stress_Buster/src/REMEDIESMODULE2.py" status="error" test="REMEDIESMODULE2" time="0">
+        <stdout/>
+        <stderr>
+            <![CDATA[Traceback (most recent call last):
+  File "C:\Users\Dell\.p2\pool\plugins\org.python.pydev.core_7.7.0.202008021154\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESMODULE2.py", line 4, in <module>
+    from REMEDIESPANEL import *
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESPANEL.py", line 5, in <module>
+    from modbuttons import ModButton
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 11, in <module>
+    class ModButton:
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 14, in ModButton
+    root=Frame(root1,width=1000,height=1000)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 3119, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 2567, in __init__
+    self.tk.call(
+_tkinter.TclError: can't invoke "frame" command: application has been destroyed
+ERROR: Module: REMEDIESMODULE2 could not be imported (file: D:/Project/Stress_Buster/src/REMEDIESMODULE2.py).
+]]>
+        </stderr>
+    </test>
+    <test location="D:/Project/Stress_Buster/src/REMEDIESMODULE3.py" status="error" test="REMEDIESMODULE3" time="0">
+        <stdout/>
+        <stderr>
+            <![CDATA[Traceback (most recent call last):
+  File "C:\Users\Dell\.p2\pool\plugins\org.python.pydev.core_7.7.0.202008021154\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESMODULE3.py", line 4, in <module>
+    from REMEDIESPANEL import *
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESPANEL.py", line 5, in <module>
+    from modbuttons import ModButton
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 11, in <module>
+    class ModButton:
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 14, in ModButton
+    root=Frame(root1,width=1000,height=1000)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 3119, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 2567, in __init__
+    self.tk.call(
+_tkinter.TclError: can't invoke "frame" command: application has been destroyed
+ERROR: Module: REMEDIESMODULE3 could not be imported (file: D:/Project/Stress_Buster/src/REMEDIESMODULE3.py).
+]]>
+        </stderr>
+    </test>
+    <test location="D:/Project/Stress_Buster/src/REMEDIESPANEL.py" status="error" test="REMEDIESPANEL" time="0">
+        <stdout/>
+        <stderr>
+            <![CDATA[Traceback (most recent call last):
+  File "C:\Users\Dell\.p2\pool\plugins\org.python.pydev.core_7.7.0.202008021154\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESPANEL.py", line 5, in <module>
+    from modbuttons import ModButton
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 11, in <module>
+    class ModButton:
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 14, in ModButton
+    root=Frame(root1,width=1000,height=1000)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 3119, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 2567, in __init__
+    self.tk.call(
+_tkinter.TclError: can't invoke "frame" command: application has been destroyed
+ERROR: Module: REMEDIESPANEL could not be imported (file: D:/Project/Stress_Buster/src/REMEDIESPANEL.py).
+]]>
+        </stderr>
+    </test>
+    <test location="D:/Project/Stress_Buster/src/Symptomlist.py" status="error" test="Symptomlist" time="0">
+        <stdout/>
+        <stderr>
+            <![CDATA[Traceback (most recent call last):
+  File "C:\Users\Dell\.p2\pool\plugins\org.python.pydev.core_7.7.0.202008021154\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\Symptomlist.py", line 8, in <module>
+    from REMEDIESMODULE1 import Acute_Stress
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESMODULE1.py", line 4, in <module>
+    from REMEDIESPANEL import *
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\REMEDIESPANEL.py", line 5, in <module>
+    from modbuttons import ModButton
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\shiboken2\files.dir\shibokensupport\__feature__.py", line 142, in _import
+    return original_import(name, *args, **kwargs)
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 11, in <module>
+    class ModButton:
+  File "D:\Project\Stress_Buster\src\modbuttons.py", line 14, in ModButton
+    root=Frame(root1,width=1000,height=1000)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 3119, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python38-32\lib\tkinter\__init__.py", line 2567, in __init__
+    self.tk.call(
+_tkinter.TclError: can't invoke "frame" command: application has been destroyed
+ERROR: Module: Symptomlist could not be imported (file: D:/Project/Stress_Buster/src/Symptomlist.py).
+]]>
+        </stderr>
+    </test>
+    <launch mode="run">
+        <launch_memento>
+            <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="src src"/>
+]]>
+        </launch_memento>
+    </launch>
+</pydev-testsuite>

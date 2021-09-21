@@ -1,0 +1,11 @@
+from tkinter import Tk
+class Window:
+    root = Tk()
+    
+    def __init__(self):
+        root = Tk()
+        w, h = root.winfo_screenwidth(),root.winfo_screenheight()
+        win.state("zoomed")
+        self.root.geometry("%dx%d+0+0" % (w,h))
+        self.root.title("Registration Form")
+        

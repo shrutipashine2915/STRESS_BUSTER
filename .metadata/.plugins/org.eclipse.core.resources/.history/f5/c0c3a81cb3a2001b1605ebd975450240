@@ -1,0 +1,21 @@
+from Window import Window
+from tkinter import *
+from REMEDIESMODULE1 import Acute_Stress
+
+class test:
+    wind=Window()
+    win1= wind.root
+    
+    w, h = win1.winfo_screenwidth(),win1.winfo_screenheight()
+    win=Frame(win1,width=1000,height=1000)
+    win.place(x=0,y=0)
+    win.configure(bg="lightblue")
+    def draw(self):
+        self.b1=Button(self.win,text="SUBMIT",command=test.validation)
+        self.b1.place(x=0,y=0)
+        
+    def validation():
+        asc=Acute_Stress()
+        asc.start
+        
+test.draw(test)
